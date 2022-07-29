@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+<style>
+	body {
+		background-image: url('../images/31.jpg');
+		font-family: 'Poppins', sans-serif;
+	}
+
+	#form {
+		width: 500px;
+		margin: 5vh auto 0 auto;
+		background-color: whitesmoke;
+		border-radius: 5px;
+		font-size: 12px;
+		padding: 21px;
+		
+	}
+
+	#form h1 {
+		color: #0f2027;
+		text-align: center;
+	}
+
+	.signup {
+		padding: 10px;
+		margin-top: 12px;
+		width: 100%;
+		color: white;
+		background-color: rgb(25, 199, 118);
+		border: none;
+		border-radius: 5px;
+	}
+	
+	.cancel {
+		padding: 10px;
+		margin-top: 12px;
+		width: 100%;
+		color: white;
+		background-color: rgb(245, 24 ,16);
+		border: none;
+		border-radius: 5px;
+	}
+	
+	.input-con input {
+		border: 3px solid #f0f0f0;
+		border-radius: 4px;
+		font-size: 12px;
+		padding: 10px;
+		width: 100%;
+		display: block;
+		
+	}
+	.input-con input:focus {
+		outline: 0;
+	}
+
+ </style>
+</head>
+<body>
+    <div>
+        <form id="form" action="/">
+            <h1><font color="#002366">Create Account</font></h1>
+            <div class="input-con">
+                <tr>
+                    <td><label for="username"><b>Name</b></label></td>
+				   <td><input id="username" name="F_name" type="text"placeholder="First"required><input id="username" name="L_name" type="text"placeholder="Last"></td>
+             </tr>
+            </div>
+           
+            <div class="input-con">
+                <label for="email"><b>Email address</b></label>
+                <input id="email" name="email" type="text"placeholder="Enter Email" required>
+           </div>
+		   
+            <div class="input-con">
+                <label for="password"><b>Password</b></label>
+                <input id="password"name="password" type="password"placeholder="Enter Password" required>
+             </div>
+			 
+			  <div class="input-con">
+                <label for="password"><b>Repeat Password</b></label>
+                <input id="password"name="R_password" type="password"placeholder="Repeat Password" required>
+             </div>
+			 
+			 <div class="input-con">
+                <label for="mobile"><b>Mobile No</b></label>
+                <input id="mobile_no" name="mobileno" type="text"placeholder="+94">
+           </div>
+		   
+		    <label>
+				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:14px"> Remember me<br>
+			</label>
+			 By creating an account you agree to our <a href="#" style="color:blue">Terms & Privacy</a><br>
+            
+			<button type="submit" class="signup" formaction="index.html">Sign Up</button>
+			<button type="submit" class="cancel">Cancel</button>
+			
+        </form>
+    </div>
+</body>
+</html>

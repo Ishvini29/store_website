@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+<style>
+	body {
+		background: linear-gradient(to bottom right, #B24CCB, #5BBDCA);
+		font-family: 'Poppins', sans-serif;
+	}
+
+	#form {
+		width: 310px;
+		margin: 19vh auto 0 auto;
+		background-color: whitesmoke;
+		border-radius: 5px;
+		font-size: 12px;
+		padding: 21px;
+		
+	}
+
+	#form h1 {
+		color: #0f2027;
+		text-align: center;
+	}
+
+	#form button {
+		padding: 10px;
+		margin-top: 12px;
+		width: 100%;
+		color: white;
+		background-color: rgb(41, 57, 194);
+		border: none;
+		border-radius: 5px;
+	}
+
+	.input-con input {
+		border: 3px solid #f0f0f0;
+		border-radius: 4px;
+		font-size: 12px;
+		padding: 10px;
+		width: 100%;
+		display: block;
+		
+	}
+
+	.input-con input:focus {
+		outline: 0;
+	}
+
+ </style>
+</head>
+<body>
+    <div>
+        <form id="form" action="/">
+            <h1>Login</h1>
+            <div class="input-con">
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td><input id="username" name="username" type="text"></td>
+             </tr>
+            </div>
+           
+            <div class="input-con">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+           </div>
+		   
+            <div class="input-con">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+             </div>
+            
+            <button type="submit"formaction="product.html">Login</button>
+			
+			<input type="checkbox" checked="checked" name="remember"> Remember me &nbsp &nbsp &nbsp &nbsp
+	 
+			<span class="psw">Forgot <a href="#">password?</a></span>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ISHUSTORE | Ecommerce Website Design</title>
+	<link rel="stylesheet"href="../Styles/style.css">
+	<style>
+		.header{
+				background-image: linear-gradient(to right top, #f7e0f8, #e6e1fd, #d4e2fd, #c5e3f7, #bce3ed);
+				}
+				.page-9 img{
+					max-width:30%;
+					position: relative;
+					padding:50px 0;
+					top: 55px;
+				}
+				
+		.form{
+			display: flex;
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-left: 50%;
+			justify-content: center;
+			align-items: center;
+			min-height: 110vh;
+		}
+
+		.form .con-form input{
+			width: 30rem;
+			background-color: transparent;
+			border: 0px;
+			border: transparent;
+			padding: 10px;
+			font-size: 18px;
+			margin: 20px;
+			border-bottom: 2px solid #fff;
+		}
+		
+		.form .con-form input ~ span{
+			position: absolute;
+			transition: 0.9s ease-in-out;
+			margin-top: 10px;
+			left: 20px;
+		}
+		
+		.form .con-form input:focus ~span{
+			pointer-events: none;
+			transform: translateY(-18px);
+		}
+		
+		.form .con-form textarea{
+			width: 30rem;
+			border: 0px;
+			margin: 19px;
+			font-size: 17px;
+			border-bottom: 2px solid white;
+			background-color: transparent;
+		}
+		
+		.form .con-form textarea ~ span
+		{
+			position: absolute;
+			margin-top: 10px;
+			transition: 0.9s ease-in-out;
+			left: 20px;
+			
+		}
+		.form .con-form textarea:focus ~span{
+			transform: translateY(-20px);
+			pointer-events: none;
+		}
+		
+		.submit{
+			background-color: dodgerblue;
+			border: 2px solid dodgerblue;
+			width: 50%;
+			height: 40px;
+			font-size: 18px;
+			margin-top: -5px;
+			}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<img src="../images/logo.png"width="125px">
+		</div>
+		<nav>
+			<img src="../images/cart.png"width="30px"height="30px">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="explore.html">Account</a></li>	
+			</ul>
+		</nav>
+	</div>
+	<div class="interface">
+		<div class="page-2">
+			<h1><b><font color="#002366">Contact Us</font></b></h1>
+			<p><b>e-mail address:&nbsp</b>anuishu292000@gmail.com</p><br>
+			<p><b>Contact no:&nbsp</b>0773550903</p><br><br><br>
+			<p><b><h3>Feel free to reach out. We’d love to hear from you.</h3></b></p>
+		</div>	
+		 <form>
+        <div class="form">
+            <div class="call">
+              <div class="con-form">
+                  <input type="text" required>
+                  <span>Full Name</span>
+              </div>
+  
+              <div class="con-form">
+                  <input type="E-mail" required>
+                  <span>E-mail Id</span>
+              </div>
+              <div class="con-form">
+                  <textarea name="text">
+                    
+                  </textarea>
+                  <span> Type your Message....</span>
+              </div>
+  
+              <div class="con-form">
+			 <button class="submit"formaction="index.html">Touch with us</button>
+	
+              </div>
+              </div>
+            </div>
+          </div>
+    </form>
+		<div class="page-9">
+			<img src="../images/contact.png">
+		</div>
+	</div>
+	</div>
+	</div>
+	
+	<!---footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="interface">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios mobilephone.<p>
+					<div class="app-logo">
+					<img src="../images/play-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="../images/logo-white.png">
+					<p>Our purpose is selling the products with reasonable price.<p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Return Policy</li>
+						<li>Blog Post</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

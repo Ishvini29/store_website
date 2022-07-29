@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;background-image: url('../images/14.jpg');}
+	
+* {box-sizing: border-box}
+
+input[type=text] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: #fg;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.sign {
+	float: center;
+	width: 20%;
+	background-color: #800080;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
+}
+
+.sign:hover {
+  background-color: #bb3385;
+}
+
+.contain {
+  padding: 16px;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .sign {
+     width: 100%;
+  }
+}
+</style>
+<body>
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="contain">
+    <p><center><h1><font color="#702963">Order Confirmation</font></h1></center></p>
+    <hr>
+	
+	<label><b><font color="#003366">Name:</font></b></label><br><input type="text"name="F_name"placeholder="First">&nbsp &nbsp <input type="text"name="L_name"placeholder="Last"><br>
+    <label><b><font color="#003366">Shipping address:</font></b></label><br><input type="text"placeholder="address"><br>
+	<label><b><font color="#003366">Quantity:</font></b></label><br>
+				<select name="quantity">
+						<option>1<option>2<option>3<option>4<option>5<option>6<option>7<option>8<option>9<option>more
+				</select><br><br>
+	<label><b><font color="#003366">Credit card Number:</font></b></label><br><input type="text"placeholder="xxxxxxxxxxx">
+	<br><br>
+	<label><b><font color="#003366">Mobile no</font></b></label><br><input type="text"placeholder="+94"><br><br>
+	<label><b><font color="#003366">Current e-mail address</font></b></label><br><input type="text"><br><br>
+		<div class="clear">
+			<button type="submit" class="sign"formaction="order.html">Pay now</button>
+		</div>
+  </div>
+</form>
+</body>
+</html>
